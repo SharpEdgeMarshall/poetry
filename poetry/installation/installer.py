@@ -9,10 +9,6 @@ from poetry.core.packages.project_package import ProjectPackage
 from poetry.io.null_io import NullIO
 from poetry.packages import Locker
 from poetry.puzzle import Solver
-from poetry.puzzle.operations import Install
-from poetry.puzzle.operations import Uninstall
-from poetry.puzzle.operations import Update
-from poetry.puzzle.operations.operation import Operation
 from poetry.repositories import Pool
 from poetry.repositories import Repository
 from poetry.repositories.installed_repository import InstalledRepository
@@ -21,6 +17,10 @@ from poetry.utils.helpers import canonicalize_name
 
 from .base_installer import BaseInstaller
 from .executor import Executor
+from .operations import Install
+from .operations import Uninstall
+from .operations import Update
+from .operations.operation import Operation
 from .pip_installer import PipInstaller
 
 
